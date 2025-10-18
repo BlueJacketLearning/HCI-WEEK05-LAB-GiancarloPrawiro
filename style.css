@@ -5,11 +5,16 @@
 /* global */
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
+body{
+    background-image: url(images/Backround.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 .top-header{
     font-family: 'Roboto', sans-serif;
     padding: 0 auto;
@@ -66,23 +71,24 @@
     color: #F9F7F7;
 }
 
-footer{
+.footer{
     background-color: #3F72AF;
     color: #F9F7F7;
-    display: flex;
     justify-content: space-around;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-footer ul a{
+.footer ul a{
     list-style: none;
     text-decoration: none;
     color: #F9F7F7;
     justify-content: center;
     align-items: center;
+    display: flex;
+    padding: 0 auto;
+    margin: 0 auto;
 }
 
 .sonic-heroes{
@@ -91,9 +97,38 @@ footer ul a{
     margin: 0 auto;
 }
 
+.image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .cover-image{
-    width: 500px;
+    width: 450px;
     padding-left: 30px;
     padding-top: 30px;
 }
+
+.description{
+    max-width: 300px;
+    background-color: #3F72AF;
+    color: #DBE2EF;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    }
+
+    .cover-image{
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+}
+
 
